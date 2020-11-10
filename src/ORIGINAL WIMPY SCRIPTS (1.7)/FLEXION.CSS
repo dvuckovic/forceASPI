@@ -1,0 +1,125 @@
+BODY {
+	background-color : #000000;
+	background-image : url(html//bg.jpg);
+	color : #C0C0C0;
+	font-family : Arial, Helvetica, sans-serif;
+	text-align : justify;
+}
+
+BODY.nav {
+	background-image : url(html/frame-bg.jpg);
+}
+
+A:LINK {
+	color : #FF0000;
+}
+
+A:VISITED {
+	color : #9F0000;
+}
+
+A:ACTIVE {
+	color : #C0C0C0;
+}
+
+A:HOVER {
+	color : #DDDDDD;
+	text-decoration: underline;
+}
+
+H1, H2, H3, H4, H5, H6 {
+	color : #FFFFFF;
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+SMALL.bold {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : xx-small;
+	color : #FFFFFF;
+	font-weight : bold;
+}
+
+SMALL.small {
+	color : #C0C0C0;
+	font-weight : normal;
+	font-size : xx-small;
+}
+
+STRONG {
+	color : #FFFFFF;
+	font-size : medium;
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+STRONG.large {
+	font-size : large;
+}
+
+TABLE {
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+TH {
+	background-color : #800000;
+	color : #FFFFFF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	text-align : center;
+}
+
+TH.small {
+	font-size : smaller;
+}
+
+TT {
+	font-family : "Courier New", Courier, monospace;
+	font-size : small;
+}
+
+TT.note {
+	font-size : x-small;
+	color : #FFFFFF;
+}
+
+TD {
+	background-color : #333333;
+	color : #C0C0C0;
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+TD.light {
+	background-color : #555555;
+}
+
+TD.trans {
+	background-color : transparent;
+}
+
+TD.yes {
+	background-color : #008000;
+}
+
+TD.no {
+	background-color : #FF0000;
+}
+
+TD.smalllight {
+	background-color : #555555;
+	font-size : smaller;
+	font-weight : bold;
+}
+
+TD.smalldark {
+	background-color : #333333;
+	font-size : smaller;
+	font-weight : bold;
+}
+
+DT.bold {
+	font-weight : bold;
+}
+
+DD.small {
+	font-size : 13px;
+}
+

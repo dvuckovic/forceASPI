@@ -1,0 +1,9 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\APIX]
+"ExcludeMiniports"=""
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\ASPIENUM]
+"Start"=dword:00000000
+"StaticVxD"="ASPIENUM.VXD"
+

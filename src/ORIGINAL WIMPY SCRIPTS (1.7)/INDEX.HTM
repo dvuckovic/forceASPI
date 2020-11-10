@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+   <HEAD>
+      <META HTTP-EQUIV="PICS-Label" CONTENT=
+      '(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l gen true comment "RSACi North America Server" for "http://www.flexion.org" on "2000.06.02T15:27-0800" r (n 0 s 0 v 0 l 0))'>
+      <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+      <META NAME="Generator" CONTENT=
+      "HTML Tidy - http://www.w3.org/People/Raggett/">
+      <META NAME="Description" CONTENT=
+      "Flexion.Org is the free resource for finding and publishing information about MPEG audio and video formats such as VideoCD, DVD and MP3. Find easy to use online tutorials, various articles and the biggest MPEG related user forums on the Internet.">
+      <META NAME="Keywords" CONTENT=
+      "VCD, VideoCD, DVD, MP3, DeCSS, VobDec, Ripper, MPEG, VOB, IFO, BUP, Tutorial, Forums, Guide, Backup, Conversion, SuperVCD, Super">
+      <LINK REL="stylesheet" TYPE="text/css" HREF="flexion.css">
+      <LINK REL="shortcut icon" HREF="html/favicon.ico">
+      <TITLE>
+         ForceASPI 1.7
+      </TITLE>
+   </HEAD>
+   <BODY>
+      <!-- 
+         <SCRIPT LANGUAGE="javascript">
+         if (self==parent)
+         {
+           document.write('<META HTTP-EQUIV="refresh" CONTENT="1; URL=/aspi/frame.htm">')
+         } 
+         </SCRIPT> -->
+      <H1>
+          ForceASPI 1.7
+      </H1>
+      <P>
+          ForceASPI is a suite of scripts designed to install the latest
+         Adaptec ASPI layer on your Intel x86 (or compatible) 32bit Windows
+         operating system.
+      </P>
+      <P>
+          ForceASPI ignores the system requirements which are imposed by
+         Adaptec's own installer and allows you to install Adaptec ASPI 4.60
+         (1021) on your PC regardless of your hardware or software
+         configuration.
+      </P>
+      <P>
+          The scripts which make up ForceASPI will automatically detect your
+         operating system and install the appropriate files correctly. The
+         following operating systems have been (breifly) tested...
+      </P>
+      <UL>
+         <LI>
+            Windows 98 Second Edition
+         </LI>
+         <LI>
+            Windows ME
+         </LI>
+         <LI>
+            Windows NT 4.0
+         </LI>
+         <LI>
+            Windows 2000
+         </LI>
+      </UL>
+      <H2>
+          Why use ForceASPI?
+      </H2>
+      <P>
+          These are the main reasons I created ForceASPI and why you might want
+         to use it...
+      </P>
+      <UL>
+         <LI>
+            No ASPI Layer in Windows 2000
+         </LI>
+         <LI>
+            Windows 9x and Windows ME ASPI Layer sucks
+         </LI>
+         <LI>
+            Many CD Digital Audio rippers require a working ASPI layer
+         </LI>
+         <LI>
+            Many DVD Rippers require a working ASPI layer
+         </LI>
+         <LI>
+            Most CD-R wirting application require a working ASPI layer
+         </LI>
+         <LI>
+            I have been applying this hack manually on my own systems and
+            decided to automate the process and let everyone benefit
+         </LI>
+         <LI>
+            Plenty of other reasons I cant be bothered to list
+         </LI>
+      </UL>
+      <!-- <TABLE WIDTH="300" BORDER="1" CELLSPACING="0" CELLPADDING="0" ALIGN= 
+                                                                        "center" SUMMARY="ForceASPI Download">
+                                                                           <TR>
+                                                                              <TH ALIGN="center">
+                                                                                 Download
+                                                                              </TH>
+                                                                           </TR>
+                                                                           <TR>
+                                                                              <TD ALIGN="center">
+                                                                                 <A HREF= 
+                                                                                 "http://www.flexion.org/cgi-bin/antileech/antileech.cgi?frcASPI17">
+                                                                                  ForceASPI 1.7</A><TT CLASS="note"> [151k]</TT>
+                                                                              </TD>
+                                                                           </TR>
+                                                                        </TABLE> -->
+      <H2>
+          Installation
+      </H2>
+      <P>
+          Simply extract the <CODE>.ZIP</CODE> file to a directory somewhere.
+         Open a Command Prompt and run the appropriate <CODE>.BAT</CODE>
+         file(s) as required.
+      </P>
+      <H2>
+          Usage and Instructions
+      </H2>
+      <P>
+          Here is a brief description of what each script does.
+      </P>
+<PRE>
+instASPI - Installs the latest, 4.60 (1021), Adaptec ASPI layer on Win9x,
+           WinME, WinNT and Win2K. Any existing ASPI Layers will be
+           overwritten.
+
+dumpASPI - Creates a backup of your existing ASPI layer, or parts thereof.
+           Some Win32 operating systems do not have an ASPI layer, in this
+           situation you will create an empty backup.
+
+restASPI - Restores the ASPI layer backup created with 'dumpASPI'.
+           WARNING! If your ASPI backp is empty this will completely erase
+           your currently installed ASPI layer.
+
+killASPI - This will completely remove your currently installed ASPI layer.
+
+killDUMP - The deletes your dumped ASPI layer.
+</PRE>
+      <P>
+          I would recommend that you use ForceASPI in the following way...
+      </P>
+      <UL>
+         <LI>
+            Run <CODE>dumpASPI</CODE> to backup your current ASPI layer
+         </LI>
+         <LI>
+            Run <CODE>instASPI</CODE> to install the new ASPI layer
+         </LI>
+         <LI>
+            Reboot your PC
+         </LI>
+         <LI>
+            Run <CODE>aspichk</CODE> to see if everything worked OK
+         </LI>
+      </UL>
+      <H2>
+          aspichk.exe
+      </H2>
+      <P>
+          <CODE>aspichk.exe</CODE> is a tool provided by Adpatec to report what
+         version of the ASPI Layer you have installed and checks if everything
+         is working OK. To test your ASPI Layer with <CODE>aspichk.exe</CODE>
+         just download it and then run it.
+      </P>
+      <TABLE WIDTH="300" BORDER="1" CELLSPACING="0" CELLPADDING="0" ALIGN= 
+      "center" SUMMARY="aspichk.exe Download">
+         <TR>
+            <TH ALIGN="center">
+               Download
+            </TH>
+         </TR>
+         <TR>
+            <TD ALIGN="center">
+               <A HREF="ftp://ftp.adaptec.com/software_pc/aspi/aspichk.exe">
+               aspichk.exe</A><TT CLASS="note"> [112k]</TT>
+            </TD>
+         </TR>
+      </TABLE>
+      <P>
+          Here are some example screenshots of what <CODE>aspichk</CODE> should
+         look like after a successful install. <B><I>NOTE!</I></B> The number
+         of Host Adapters detected will is dependant on your hardware
+         configuration.
+      </P>
+      <DIV ALIGN="center">
+         <IMG SRC="html/win9x.jpg" WIDTH="434" HEIGHT="254" BORDER="0" ALT=
+         "Win9x"><BR>
+         <BR>
+          <IMG SRC="html/winnt.jpg" WIDTH="434" HEIGHT="254" BORDER="0" ALT=
+         "WinNT">
+      </DIV>      
+      <H2>
+          History
+      </H2>
+      <DL>
+         <DT>
+             ForceASPI 1.7
+         </DT>
+         <DD>
+            <SMALL>+ The Command Prompt windows now close on completion and the
+            registry keys get added without prompting. Thanks to <A HREF= 
+            "http://apachez.has.it" TARGET="_blank">Apachez</A> for these
+            suggestions.</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.6
+         </DT>
+         <DD>
+            <SMALL>+ Compatibility fixes for Win9x. Thanks to Tymoteusz
+            Swiech</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.5
+         </DT>
+         <DD>
+            <SMALL>+ ForceASPI now updates the registry with the appropriate
+            keys to fully enable the ASPI layer, even on ATAPI only systems.
+            Hopefully this will be the end of the remaining issues. Thanks to
+            Stuey for pointing out my oversight.</SMALL>
+         </DD>
+         <DD>
+            <SMALL>- I have fixed some erroneous messages generated by
+            ForceASPI when running under Win9x.</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.4
+         </DT>
+         <DD>
+            <SMALL>- I have fixed a major bug which caused some of the scripts
+            to fail under WinNT 4.0. Sorry, my bad. Thanks to Tronje
+            B&#228;&#223;ler for spotting it.</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.3
+         </DT>
+         <DD>
+            <SMALL>+ I have added a <CODE>pause</CODE> at the end of each
+            script of people running the scripts from Explorer under WInNT or
+            Win2k can see the script output before the windows closes.</SMALL>
+         </DD>
+         <DD>
+            <SMALL>- Fixed a typo in <CODE>restASPI.bat</CODE>. Thanks
+            Jozart.</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.2
+         </DT>
+         <DD>
+            <SMALL>- I have removed <CODE>aspichk.exe</CODE> from the ForceASPI
+            distribution and added download links to the documentation</SMALL>
+         </DD>
+         <DD>
+            <SMALL>+ The scripts display a more complete status while
+            running</SMALL>
+         </DD>
+         <DD>
+            <SMALL>+ The scripts error checking is slightly enhanced</SMALL>
+         </DD>
+         <DD>
+            <SMALL>+ Added <CODE>killDUMP</CODE> to remove your dumped ASPI
+            layer</SMALL>
+         </DD>
+         <DD>
+            <SMALL>+ Various HTML, documentation and typo fixes</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.1
+         </DT>
+         <DD>
+            <SMALL>- I have reverted to simple .BAT files as the compiled .COM
+            files didn't work under WinNT and Win2K</SMALL>
+         </DD>
+         <DD>
+            <SMALL>+ The scripts will now abort if they detect a non-Intel x86
+            CPU</SMALL>
+         </DD>
+         <DD>
+            <SMALL>- Fixed typos in HTML and resized screenshots</SMALL>
+         </DD>
+         <DD>
+            <BR>
+         </DD>
+         <DT>
+             ForceASPI 1.0
+         </DT>
+         <DD>
+            <SMALL>+ Initial public release</SMALL>
+         </DD>
+      </DL>
+      <H2>
+          To Do
+      </H2>
+      <UL>
+         <LI>
+            Auto reboot option
+         </LI>
+         <LI>
+            .INF installer maybe
+         </LI>
+      </UL>
+      <H2>
+          Disclaimer
+      </H2>
+      <P>
+          You agree to use ForceASPI at your own risk. I will not be held
+         responsible for any loss of data, damage to hardware or loss of
+         earnings as a result of using any of the files distributed in this
+         package.
+      </P>
+      <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="center" TITLE= 
+      "wimpy@flexion.org" SUMMARY="ASCII Art Formatting">
+         <TR>
+            <TD CLASS="Trans">
+<PRE>
+ __      __
+/  \    /  \ __ ___ ___  ____  __  __
+\   \/\/   // /`__ `__ \/ __ \/ / / /
+ \        // / / / / / / /_/ / /_/ /
+  \__/\  //_/_/ /_/ /_/ .___/\__, /
+       \/@Flexion.Org/_/    /____/
+         
+   http://Flexion.Org
+</PRE>
+            </TD>
+         </TR>
+      </TABLE>
+      <DIV ALIGN="center">
+         <IMG SRC="html/bar.gif" BORDER="0" ALT="-----" WIDTH="518" HEIGHT="25"
+         ALIGN="middle"><BR>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Begin
+    var m = "Last Update : " + document.lastModified;
+    var p = m.length-8;
+    document.write("<small class=small>");
+    document.write(m.substring(p, 0));
+    document.write("<\/small>");
+    // End -->
+</SCRIPT>
+         <BR>
+          <IMG SRC="html/penta.gif" WIDTH="35" HEIGHT="35" BORDER="0" ALT="*"
+         ALIGN="middle">
+      </DIV>
+   </BODY>
+</HTML>
+
